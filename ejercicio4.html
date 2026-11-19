@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Citas Veterinarias🐕‍🦺</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="panel">
+        <a class="back-link" href="index.html">← Volver al taller</a>
+        <p class="eyebrow">Ejercicio 4</p>
+        <h1>Registro de citas Veterinarias🐕‍🦺</h1>
+        <p class="intro">Completa los datos para registrar una nueva cita🐾.</p>
+
+        <form id="formularioCita" class="inventory-form">
+            <label for="fecha">Fecha de la cita:
+                <input type="date" id="fecha" required>
+            </label>
+
+            <label for="nombre">Nombre de la mascota:
+                <input type="text" id="nombre" placeholder="Ingrese el nombre" required>
+            </label>
+
+            <label for="tipo">Tipo de mascota:
+                <select id="tipo" required>
+                    <option value="">Seleccione una mascota</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>  
+                </select>
+            </label>
+
+            <label for="raza">Raza de la mascota:
+                <input type="text" id="raza" placeholder="Ingrese la raza" required>
+            </label>
+
+            <label for="edad">Edad de la mascota:
+                <input type="number" id="edad" min="0" placeholder="Edad en años" required>
+            </label>
+
+            <label for="consulta">Tipo de consulta:
+                <select id="consulta" required>
+                    <option value="">Seleccione una consulta</option>
+                    <option value="Cita">Cita médica</option>
+                    <option value="Baño y estética">Baño y estética</option>
+                    <option value="Vacunación">Vacunación</option>
+                    <option value="Urgencia">Urgencia</option>
+                </select>
+            </label>
+
+            <button type="button" onclick="registrarCita()">Registrar cita</button>
+        </form>
+
+        <section class="results inventory-results">
+            <h2>Citas registradas</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre</th>
+                            <th>Tipo de mascota</th>
+                            <th>Raza</th>
+                            <th>Edad</th>
+                            <th>Tipo de consulta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaCitas"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/ejercicio4.js"></script>
+</body>
+</html>

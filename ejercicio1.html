@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nombres📒</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="panel">
+        <a class="back-link" href="index.html">← Volver al taller</a>
+        <p class="eyebrow">Ejercicio 1</p>
+        <h1>Registro de nombres📒</h1>
+        <div class="form-row">
+            <input type="text" id="nombre" placeholder="Escribe un nombre" aria-label="Nombre">
+            <button type="button" onclick="agregarNombre()">Agregar</button>
+        </div>
+        <section class="results" aria-labelledby="registered-heading">
+            <h2 id="registered-heading">Personas registradas</h2>
+            <ul id="lista"></ul>
+            <p id="cantidad" aria-live="polite"></p>
+        </section>
+    </main>
+    <script src="js/ejercicio1.js"></script>
+</body>
+</html>
